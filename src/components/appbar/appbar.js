@@ -1,15 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import AppBar from 'material-ui/AppBar';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
 
 const Bar = props => {
   return (
-    <div>
-      <AppBar
-        title="Markdown to Medium"
-        showMenuIconButton={false}
-        />
-    </div>
+    <AppBar position="static">
+      <Toolbar>
+        <Typography variant="h6">Markdown to Medium</Typography>
+      </Toolbar>
+    </AppBar>
   );
 };
 
